@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Data>
+<Game>
+<id>1558</id>
+<GameTitle>Harvest Moon Animal Parade</GameTitle>
+<ReleaseDate>11/10/2010</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>32234</id>
+<GameTitle>Busy Scissors</GameTitle>
+<ReleaseDate>11/02/2010</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>890</id>
+<GameTitle>Rayman Raving Rabbids TV Party</GameTitle>
+<ReleaseDate>11/18/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>908</id>
+<GameTitle>Super Mario Galaxy 2</GameTitle>
+<ReleaseDate>05/23/2010</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5644</id>
+<GameTitle>A Boy and His Blob</GameTitle>
+<ReleaseDate>10/13/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5694</id>
+<GameTitle>Haunted House</GameTitle>
+<ReleaseDate>10/05/2010</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5202</id>
+<GameTitle>The Lord of the Rings: Aragorn's Quest</GameTitle>
+<ReleaseDate>09/14/2010</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5233</id>
+<GameTitle>Mario &amp; Sonic at the Olympic Games</GameTitle>
+<ReleaseDate>11/06/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5269</id>
+<GameTitle>Rock Band 2</GameTitle>
+<ReleaseDate>12/18/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5334</id>
+<GameTitle>Call of Duty: Modern Warfare - Reflex Edition</GameTitle>
+<ReleaseDate>11/10/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5339</id>
+<GameTitle>Mini Ninjas</GameTitle>
+<ReleaseDate>09/08/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5341</id>
+<GameTitle>The Simpsons Game</GameTitle>
+<ReleaseDate>10/30/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5346</id>
+<GameTitle>Sonic and the Secret Rings</GameTitle>
+<ReleaseDate>02/20/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>19585</id>
+<GameTitle>Don King Boxing</GameTitle>
+<ReleaseDate>03/31/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5601</id>
+<GameTitle>Wii Play: Motion</GameTitle>
+<ReleaseDate>06/13/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>4968</id>
+<GameTitle>Far Cry Vengeance</GameTitle>
+<ReleaseDate>12/12/2006</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>4975</id>
+<GameTitle>Indiana Jones and the Staff of Kings</GameTitle>
+<ReleaseDate>06/12/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>4982</id>
+<GameTitle>Transformers: The Game</GameTitle>
+<ReleaseDate>06/26/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>4994</id>
+<GameTitle>Tom Clancy's Splinter Cell: Double Agent</GameTitle>
+<ReleaseDate>11/28/2006</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>4999</id>
+<GameTitle>Happy Feet</GameTitle>
+<ReleaseDate>11/13/2006</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5000</id>
+<GameTitle>Avatar: The Last Airbender</GameTitle>
+<ReleaseDate>11/19/2006</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5005</id>
+<GameTitle>Spider-Man: Friend or Foe</GameTitle>
+<ReleaseDate>10/02/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5029</id>
+<GameTitle>Cars</GameTitle>
+<ReleaseDate>06/05/2006</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5031</id>
+<GameTitle>Star Trek: Conquest</GameTitle>
+<ReleaseDate>11/20/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5036</id>
+<GameTitle>NASCAR Kart Racing</GameTitle>
+<ReleaseDate>02/10/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5043</id>
+<GameTitle>Astro Boy</GameTitle>
+<ReleaseDate>10/20/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5163</id>
+<GameTitle>Mario &amp; Sonic at the Olympic Winter Games</GameTitle>
+<ReleaseDate>10/13/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>10747</id>
+<GameTitle>All Star Karate</GameTitle>
+<ReleaseDate>04/20/2010</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>4254</id>
+<GameTitle>LEGO Pirates of the Caribbean: The Video Game</GameTitle>
+<ReleaseDate>05/10/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>5288</id>
+<GameTitle>Star Wars: The Clone Wars – Republic Heroes</GameTitle>
+<ReleaseDate>10/06/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>3782</id>
+<GameTitle>Lego Indiana Jones: The Original Adventures</GameTitle>
+<ReleaseDate>06/03/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>3903</id>
+<GameTitle>Alien Syndrome</GameTitle>
+<ReleaseDate>07/27/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>3136</id>
+<GameTitle>Monsters vs. Aliens</GameTitle>
+<ReleaseDate>03/24/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>3299</id>
+<GameTitle>Goldeneye 007</GameTitle>
+<ReleaseDate>11/02/2010</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>4406</id>
+<GameTitle>Boom Blox Bash Party</GameTitle>
+<ReleaseDate>05/19/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>4425</id>
+<GameTitle>MadWorld</GameTitle>
+<ReleaseDate>03/10/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>4432</id>
+<GameTitle>Rabbids Go Home</GameTitle>
+<ReleaseDate>11/01/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>10754</id>
+<GameTitle>Ice Age: Continental Drift - Arctic Games</GameTitle>
+<ReleaseDate>07/10/2012</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>10785</id>
+<GameTitle>Dessine ton Aventure</GameTitle>
+<ReleaseDate>11/06/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>11649</id>
+<GameTitle>Just Dance 4</GameTitle>
+<ReleaseDate>10/09/2012</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9317</id>
+<GameTitle>Guitar Hero: Metallica</GameTitle>
+<ReleaseDate>03/29/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9386</id>
+<GameTitle>Top Shot Arcade</GameTitle>
+<ReleaseDate>03/07/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9590</id>
+<GameTitle>Big Beach Sports 2</GameTitle>
+<ReleaseDate>06/18/2010</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7587</id>
+<GameTitle>Barnyard</GameTitle>
+<ReleaseDate>08/01/2006</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7594</id>
+<GameTitle>Castlevania Judgment</GameTitle>
+<ReleaseDate>03/20/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7599</id>
+<GameTitle>Deca Sports</GameTitle>
+<ReleaseDate>05/13/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7602</id>
+<GameTitle>Elebits</GameTitle>
+<ReleaseDate>12/06/2006</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7638</id>
+<GameTitle>Fishing Master</GameTitle>
+<ReleaseDate>09/18/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7645</id>
+<GameTitle>Bit.Trip Complete</GameTitle>
+<ReleaseDate>09/13/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7652</id>
+<GameTitle>Ice Age 2: The Meltdown</GameTitle>
+<ReleaseDate>03/14/2006</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7657</id>
+<GameTitle>Madden NFL 08</GameTitle>
+<ReleaseDate>08/14/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7671</id>
+<GameTitle>LEGO Star Wars III: The Clone Wars</GameTitle>
+<ReleaseDate>03/22/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7715</id>
+<GameTitle>Mushroom Men</GameTitle>
+<ReleaseDate>12/02/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7722</id>
+<GameTitle>Safecracker</GameTitle>
+<ReleaseDate>12/02/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7727</id>
+<GameTitle>Super Swing Golf</GameTitle>
+<ReleaseDate>12/12/2006</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7734</id>
+<GameTitle>Tiger Woods PGA Tour 07</GameTitle>
+<ReleaseDate>03/13/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7739</id>
+<GameTitle>WALL-E</GameTitle>
+<ReleaseDate>06/24/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7741</id>
+<GameTitle>Wing Island</GameTitle>
+<ReleaseDate>03/20/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7772</id>
+<GameTitle>Iron Man 2</GameTitle>
+<ReleaseDate>05/04/2010</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8458</id>
+<GameTitle>Hasbro Family Game Night</GameTitle>
+<ReleaseDate>11/11/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8460</id>
+<GameTitle>Hooked! Real Motion Fishing</GameTitle>
+<ReleaseDate>10/30/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8465</id>
+<GameTitle>Rapala's Fishing Frenzy</GameTitle>
+<ReleaseDate>09/02/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8472</id>
+<GameTitle>Dead Rising: Chop Till You Drop</GameTitle>
+<ReleaseDate>02/24/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8701</id>
+<GameTitle>Harvest Moon: Tree of Tranquility</GameTitle>
+<ReleaseDate>09/30/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8833</id>
+<GameTitle>The Sims 3</GameTitle>
+<ReleaseDate>06/02/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8838</id>
+<GameTitle>Disney Universe</GameTitle>
+<ReleaseDate>11/16/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8840</id>
+<GameTitle>Generator Rex: Agent of Providence</GameTitle>
+<ReleaseDate>11/01/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8845</id>
+<GameTitle>Rio</GameTitle>
+<ReleaseDate>04/12/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8852</id>
+<GameTitle>Little King's Story</GameTitle>
+<ReleaseDate>07/21/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8927</id>
+<GameTitle>Just Dance 3</GameTitle>
+<ReleaseDate>10/11/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8958</id>
+<GameTitle>ABBA: You Can Dance</GameTitle>
+<ReleaseDate>11/15/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8965</id>
+<GameTitle>Dragon Ball: Revenge of King Piccolo</GameTitle>
+<ReleaseDate>11/05/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9122</id>
+<GameTitle>Academy Of Champions: Soccer</GameTitle>
+<ReleaseDate>11/03/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8991</id>
+<GameTitle>Guilty Gear XX Accent Core</GameTitle>
+<ReleaseDate>10/15/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8996</id>
+<GameTitle>Jillian Michaels Fitness Ultimatum 2011</GameTitle>
+<ReleaseDate>11/18/2010</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9033</id>
+<GameTitle>Tron: Evolution – Battle Grids</GameTitle>
+<ReleaseDate>12/10/2010</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9038</id>
+<GameTitle>Need for Speed: Nitro</GameTitle>
+<ReleaseDate>11/03/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9071</id>
+<GameTitle>de Blob 2</GameTitle>
+<ReleaseDate>02/22/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9127</id>
+<GameTitle>Agatha Christie: And Then There Were None</GameTitle>
+<ReleaseDate>02/25/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9134</id>
+<GameTitle>We Ski</GameTitle>
+<ReleaseDate>05/13/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9139</id>
+<GameTitle>Avatar: The Last Airbender – Into the Inferno</GameTitle>
+<ReleaseDate>10/13/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9141</id>
+<GameTitle>Avatar: The Last Airbender – The Burning Earth</GameTitle>
+<ReleaseDate>10/16/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9153</id>
+<GameTitle>Namco Museum Remix</GameTitle>
+<ReleaseDate>10/23/2007</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9160</id>
+<GameTitle>Crazy Machines</GameTitle>
+<ReleaseDate>10/02/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9172</id>
+<GameTitle>Tiger Woods PGA Tour 09 All Play</GameTitle>
+<ReleaseDate>08/26/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9191</id>
+<GameTitle>Cars 2</GameTitle>
+<ReleaseDate>06/21/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9216</id>
+<GameTitle>Dance Dance Revolution Hottest Party 5</GameTitle>
+<ReleaseDate>11/25/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>9230</id>
+<GameTitle>Rapala We Fish</GameTitle>
+<ReleaseDate>09/22/2009</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7929</id>
+<GameTitle>Driver: San Francisco</GameTitle>
+<ReleaseDate>09/06/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7931</id>
+<GameTitle>Gummy Bears Minigolf</GameTitle>
+<ReleaseDate>11/16/2010</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8080</id>
+<GameTitle>The Legend of Zelda: Skyward Sword</GameTitle>
+<ReleaseDate>11/20/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>8299</id>
+<GameTitle>The Adventures of Tintin: The Secret of the Unicorn</GameTitle>
+<ReleaseDate>12/06/2011</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>7190</id>
+<GameTitle>Guitar Hero: World Tour</GameTitle>
+<ReleaseDate>10/26/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>12089</id>
+<GameTitle>Skylanders Giants</GameTitle>
+<ReleaseDate>10/21/2012</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>12642</id>
+<GameTitle>Pinball Hall of Fame: The Williams Collection</GameTitle>
+<ReleaseDate>02/26/2008</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>18157</id>
+<GameTitle>Pinball Hall of Fame: The Gottlieb Collection</GameTitle>
+<ReleaseDate></ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>13429</id>
+<GameTitle>Zumba Fitness Core</GameTitle>
+<ReleaseDate>10/16/2012</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>13486</id>
+<GameTitle>The Hip Hop Dance Experience</GameTitle>
+<ReleaseDate>11/13/2012</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>13493</id>
+<GameTitle>Just Dance: Disney Party</GameTitle>
+<ReleaseDate>10/23/2012</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+<Game>
+<id>13652</id>
+<GameTitle>Disney's Chicken Little Ace in Action</GameTitle>
+<ReleaseDate>12/11/2006</ReleaseDate>
+<Platform>Nintendo Wii</Platform>
+</Game>
+</Data>
