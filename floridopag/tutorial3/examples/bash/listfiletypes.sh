@@ -9,8 +9,8 @@ TARGETDIR=$1
 # A typical use of IF: if no TARGETDIR defined, then x == x and the expression in brackets will
 # be false, so the else branch will be executed and an error message will be shown.
 if [ "x$TARGETDIR" == "x" ]; then
-     TARGETDIR='/etc'
-     MESSAGE="No argument found. Listing filetypes for the /etc directory by default"
+     TARGETDIR=~
+     MESSAGE="No argument found. Listing filetypes for the home directory $TARGETDIR by default"
 else
      MESSAGE="Scanning filetypes for the ${TARGETDIR} directory"
 fi
