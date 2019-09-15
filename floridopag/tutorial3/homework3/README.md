@@ -18,46 +18,51 @@ In this exercise you will be asked to
 ## Goals
 
 In this homework you will edit some bash pseudocode and implement
-the requested functionalities.
+a script called `musicstats.sh` that extracts information from a text file.
 
 I will ask you to automate the download and processing of a dataset of
 computer music called STIL.txt.
 
 This dataset is accessible at this URL:
   <https://hvsc.de/download/C64Music/DOCUMENTS/STIL.txt>
-More information about the music collection can be found in the references.
+More information about the music collection can be found in the references [1].
 
 This dataset contains information about some music files stored in
 folders. Every entry of the database is in fact a path of the form
 `/collection/subcollection/..../artist name/song filename.sid`
 where .sid is a data format for c64 music.
 
-Your task is to edit the script musicstats.sh so that it:
-1. Downloads the STIL.txt database from the aforementioned URL. If the 
+Your task is to edit the script `musicstats.sh` so that it:
+1. Gets a list of names of artists from the command line:
+```shell
+   ./musicstats.sh Tel_Jeroen Hubbard_Rob
+```
+2. Downloads the `STIL.txt` database from the aforementioned URL. If the 
 file has already been downloaded, the script should NOT redownload it.
-2. Creates a folder called `stats` where it will store some information
+3. Creates a folder called `stats` where it will store some information
 taken from the STIL.txt file. The directory is removed and recreated
 every time the script is run.
-3. The information contained in `stats` is as follows:
-   * a file called  `STIL-recordentries.txt` that contains only the file
-     paths and their line numbers in the STIL.txt database without any 
-     other information.
-   * a file called stats.csv that will contain for each artist the number
-     of songs written by the artist
-   * for each artist, two scripts will be created:
-     * artistname-entrier.txt - contains only the paths relative to an artist
-     * artistname-songs.txt - contains only the song names of a given artist
-4. The script must be able to create such contents based on a selection 
-   of artist that the user can pass via command line. As an example 
-   I created the expected output files for this script execution:
+The information contained in `stats` is as follows:
+  * a file called  `STIL-recordentries.txt` that contains only the file
+    paths and their line numbers in the STIL.txt database without any 
+    other information.
+  * a file called `stats.csv` that will contain for each artist the number
+    of songs written by the artist
+  * for each artist, two scripts will be created:
+    * `artistname-entries.txt` - contains only the paths relative to an artist
+    * `artistname-songs.txt` - contains only the song names of a given artist
+4. The script will also show which one of the artists have the biggest number
+of songs on the screen, based on the contents of `stats.csv`
+   
+### Example output 
+I created the expected output files for this script execution:
 ```shell
    ./musicstats.sh Hubbard_Rob Follin_Tim Gray_Matt Tel_Jeroen
 ```
 The example generated files are in the `samplefolder` and the example 
 output to screen of the script is in the `sampleoutputs` folder:
 * output_files_creation.log  : the script downloads the database and creates the stats directory
-* output_files_exist.log : the script does not need to download the STIL.txt file and deletes the stats directory.
-case where database and script folder are not present
+* output_files_exist.log : the script does not need to download the STIL.txt file as it is already there  and it deletes the stats directory since it's already present.
 
 You can use the above sample data for comparison with your progress.
 
@@ -106,3 +111,8 @@ the homework.
 The homework must be submitted as a git pull request to this repository.
 This task will be clearer after the git tutorial (Tutorial 5), and this 
 README will be updated accordingly. 
+
+## References
+
+[1]: The High Voltage Sid Collection, c64 music database
+       <https://hvsc.de/>
