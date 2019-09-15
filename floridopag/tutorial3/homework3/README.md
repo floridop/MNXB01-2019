@@ -59,8 +59,8 @@ I created the expected output files for this script execution:
 ```shell
    ./musicstats.sh Hubbard_Rob Follin_Tim Gray_Matt Tel_Jeroen
 ```
-The example generated files are in the `samplefolder` and the example 
-output to screen of the script is in the `sampleoutputs` folder:
+The example generated files are in the `code/samplefolder` and the example 
+output to screen of the script is in the `code/sampleoutputs` folder:
 * output_files_creation.log  : the script downloads the database and creates the stats directory
 * output_files_exist.log : the script does not need to download the STIL.txt file as it is already there  and it deletes the stats directory since it's already present.
 
