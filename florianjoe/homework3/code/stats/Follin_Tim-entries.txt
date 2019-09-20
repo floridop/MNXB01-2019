@@ -1,0 +1,14 @@
+/MUSICIANS/F/Follin_Tim/
+/MUSICIANS/F/Follin_Tim/Agent_X_II_The_Mad_Profs_Back.sid
+/MUSICIANS/F/Follin_Tim/Bionic_Commando.sid
+/MUSICIANS/F/Follin_Tim/Black_Lamp.sid
+/MUSICIANS/F/Follin_Tim/Bodyslam.sid
+/MUSICIANS/F/Follin_Tim/Ghouls_n_Ghosts.sid
+/MUSICIANS/F/Follin_Tim/Ghouls_n_Ghosts_Alternate.sid
+/MUSICIANS/F/Follin_Tim/L_E_D_Storm.sid
+/MUSICIANS/F/Follin_Tim/L_E_D_Storm_Alternate.sid
+/MUSICIANS/F/Follin_Tim/Music_Demo_Version_1.sid
+/MUSICIANS/F/Follin_Tim/Peter_Pack_Rat.sid
+/MUSICIANS/F/Follin_Tim/Psycho_Pigs_UXB.sid
+/MUSICIANS/F/Follin_Tim/Raw_Recruit.sid
+/MUSICIANS/F/Follin_Tim/Sky_Shark.sid
