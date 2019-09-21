@@ -191,7 +191,7 @@ echo "\"ARTISTNAME\",\"NUMSONGS\"" > ${STATSDIR}/stats.csv
 # save the extracted lines to a file called ${STATSDIR}/STIL-recordentries.txt
 # by redirecting the output of egrep with the > operator
 
-egrep ^/ $STIL >${STATSDIR}/STIL-recordentries.txt
+egrep -n ^/ $STIL >${STATSDIR}/STIL-recordentries.txt
 
 ### E4 END #############################################################
 
