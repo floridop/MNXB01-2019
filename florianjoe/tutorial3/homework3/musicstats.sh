@@ -118,7 +118,8 @@ fi
 STIL=./STIL.txt
 URL="https://hvsc.de/download/C64Music/DOCUMENTS/STIL.txt"
 if [[ ! -f "${STIL}" ]]; then
-   wget ${URL}
+	#first it worked withput the option --no-check-certificate, but as I tried it again there was a verfication error, so I put it in.
+   wget --no-check-certificate ${URL}
    # E2.2 (1 point ) If the wget command fails, exit with error.
    if [ $? -ne 0 ]; then
 		echo "Error while downloading STIL database from ${URL} "
