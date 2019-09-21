@@ -301,7 +301,7 @@ done  # End of for loop
 # https://www.geeksforgeeks.org/sort-command-linuxunix-examples/
 # useful options: -h -k
 #
-TOPSONGARTIST=`sort -k2 ${STATSDIR}/stats.csv | tail -n 1`
+TOPSONGARTIST=`sort -t\" -h -k4 ${STATSDIR}/stats.csv | tail -n 1` 
 #
 ### E6 END #############################################################
 
