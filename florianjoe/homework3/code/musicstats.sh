@@ -224,7 +224,6 @@ for artist in ${ARTISTNAMES}
    # https://www.shellhacks.com/awk-print-column-change-field-separator-linux-bash/
    
    awk -F "/" '{print $NF}' ${STATSDIR}/${artist}-entries.txt > ${STATSDIR}/${artist}-songs.txt
-   #awk -v awkartist=${artist} -F "/" '$(NF-1)~"awkartist" {print $NF}' ${STATSDIR}/STIL-recordentries.txt > ${STATSDIR}/${artist}-songs.txt
    
    ### E5.3 END ########################################################
 
