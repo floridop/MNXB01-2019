@@ -178,6 +178,16 @@ echo "\"ARTISTNAME\",\"NUMSONGS\"" > ${STATSDIR}/stats.csv
 # egrep examples: https://www.computerhope.com/unix/uegrep.htm
 # save the extracted lines to a file called ${STATSDIR}/STIL-recordentries.txt
 # by redirecting the output of egrep with the > operator
+# 20190929 UPDATE: Sorry this comment was missing when I uploaded the exercise:
+#                  I would like to have the line numbers of each line 
+#                  that matches the specified pattern. 
+#                  Add the -n option to egrep.
+#                  This is why in the example files 
+#                  code/samplefolder/stats/STIL-recordentries.txt
+#                  code/samplefolder/<artistname>-entries.txt
+#                  there are numbers at the beginning of each line.
+#                  
+#                
 #
 #YOUR_CODE_HERE
 #
