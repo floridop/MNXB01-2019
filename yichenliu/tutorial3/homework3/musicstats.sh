@@ -65,7 +65,7 @@ usage(){
 # Discover it by downloading it and using the file command.
 #  file STIL.txt
 # Paste the output of the file command below.
-# The encoding is __ISO-8859 text, with CRLF line terminators__
+# The encoding is __UTF-8 Unicode text__
 #
 # (1 point) Which of the following statement do you think it is true
 # about the file format in order to complete the sentence below
