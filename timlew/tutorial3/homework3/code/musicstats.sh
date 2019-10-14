@@ -140,7 +140,7 @@ STATSDIR="stats"
 # if it does, delete it.
 # Always print out information to the user about what is happening.
 if [[ -d stats ]]; then 	
-echo "Stats folder exists and will be deleted..."
+echo "Old stats folder exists and will be deleted..."
 rm -rf ${STATSDIR}
 else
 echo "Stats folder doesnt exist"
@@ -148,7 +148,7 @@ fi
 
 # E3.3 (1 point ) Create a new folder taking the name from the 
 # variable $STATSDIR
-echo "Creating new stats directory $STATSDIR"
+echo "Creating new folder $STATSDIR"
 mkdir ${STATSDIR}
 #YOUR_CODE_HERE
 
