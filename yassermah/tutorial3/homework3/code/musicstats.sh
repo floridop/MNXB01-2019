@@ -47,7 +47,7 @@ usage(){
 ###### EDIT THE CODE BELOW, follow instructions ########################
 
 #
-# Student: YOUR_NAME_HERE
+# Student: Yasser Mahfoud
 #
 
 ### E0 (2 points) fill the blanks
@@ -65,7 +65,7 @@ usage(){
 # Discover it by downloading it and using the file command.
 #  file STIL.txt
 # Paste the output of the file command below.
-# The encoding is ____________________ 
+# The encoding is STIL.txt: ISO-8859 text, with CRLF line terminators 
 #
 # (1 point) Which of the following statement do you think it is true
 # about the file format in order to complete the sentence below
@@ -77,7 +77,7 @@ usage(){
 # a) [ ] ... starts and ends with a sequence of symbols # (hash)
 # b) [ ] ... starts with a path /something/.../something.sid entry
 #       and ends with a blank line
-# c) [ ] ... starts with a path /something/.../something.sid entry 
+# c) [X] ... starts with a path /something/.../something.sid entry 
 #       and ends with an ARTIST: or COMMENT entry
 #
 # hint: find counter examples that contradict 
@@ -100,8 +100,13 @@ ARTISTNAMES=$@
 # this file to give the user information how to pass the parameters.
 # DO NOT MODIFY THE usage() FUNCTION BODY.
 
-if [[ #YOUR_CONDITION_HERE ]]; then
-   #YOUR_CODE_HERE
+if [ -z "$ARTISTNAMES" ] 
+then
+	echo "\$ARTISTNAMES IS EMPTY"
+	usage
+else
+	echo "\$ARTISTNAMES IS NOT EMPTY"
+
 fi
 
 ########################################################################
@@ -113,15 +118,22 @@ fi
 # execution.
 # Hint: use the -e condition and the predefined variable $?
 
-# E2.1 (2 points) if the STIL.txt file does not exist, download the file
-if #YOUR_CODE_HERE
+# E2.1 (2 points) if the STIL.txt file does not exist, download the fil
+FILE=STIL.txt
+
+if [ ! -e "$FILE" ]; then
+	wget -q  https://hvsc.de/download/C64Music/DOCUMENTS/STIL.txt
    
    # E2.2 (1 point ) If the wget command fails, exit with error.
-   if #YOUR_CODE_HERE
-   
-   fi
+   	r='wget -q  https://hvsc.de/download/C64Music/DOCUMENTS/STIL.txt'
+   	if [ $r -ne 0];
+   	then
+		echo "ERROR occured when calling wget. Exiting."
+	   	exit 1
+	fi
    # otherwise (if the file exists) do not download anything
-   else echo "STIL database found, will not download again."
+   else 
+	   echo "STIL database found, will not download again."
 fi
 
 ### E2 END #############################################################
@@ -134,17 +146,31 @@ fi
 # the string 'stats'
 #YOUR_CODE_HERE
 
+STATSDIR='stats'
+
 
 # E3.2 (2 points) Use an if to test if the 'stats' folder exists in the
 # folder where the script is being executed.
 # if it does, delete it.
 # Always print out information to the user about what is happening.
 #YOUR_CODE_HERE
+if [ -d $STATSDIR ]; then
+	echo "$STATSDIR is found, deleting previous outputs."
+	read -p " Press y to delete the previous outputs." -n 1 -r
+	echo
+	if [[ $REPLY =~ ^[Yy]$ ]]; then
+		rm -r $STATSDIR
+	fi
+else
+	mkdir $STATSDIR
+fi
 
 # E3.3 (1 point ) Create a new folder taking the name from the 
 # variable $STATSDIR
 echo "Creating new stats directory $STATSDIR"
 #YOUR_CODE_HERE
+
+mkdir $STATSDIR
 
 ### E3 END #############################################################
 
@@ -190,6 +216,9 @@ echo "\"ARTISTNAME\",\"NUMSONGS\"" > ${STATSDIR}/stats.csv
 #                
 #
 #YOUR_CODE_HERE
+
+egrep -n '^/' $FILE > ${STATSDIR}/STIL-recordentries.txt
+
 #
 ### E4 END #############################################################
 
@@ -199,7 +228,9 @@ echo "\"ARTISTNAME\",\"NUMSONGS\"" > ${STATSDIR}/stats.csv
 # 
 # E5.1 (1 point) use the proper variables inside the for condition and 
 # body
-for #YOUR_CODE_HERE
+for ARTISTNAME in $ARTISTNAMES
+do
+
    
    #####################################################################
    ### E5.2 (2 points) Create a file containing only artist-specific 
@@ -213,6 +244,7 @@ for #YOUR_CODE_HERE
    # the file is stats/Follin_Tim-entries.txt
    #
    #YOUR_CODE_HERE
+  	grep "${ARTISTNAME}/" ${STATSDIR}/STIL-recordentries.txt > ${STATSDIR}/${ARTISTNAME}-entries.txt  
    #
    ### E5.2 END ########################################################
 
@@ -224,7 +256,8 @@ for #YOUR_CODE_HERE
    # line. Some hints here:
    # https://www.shellhacks.com/awk-print-column-change-field-separator-linux-bash/
    #
-   #YOUR_CODE_HERE
+   
+   	awk  -F "/" '{print $NF}' ${STATSDIR}/${ARTISTNAME}-entries.txt > ${STATSDIR}/${ARTISTNAME}-songs.txt # this doesn't work. 
    #
    ### E5.3 END ########################################################
 
@@ -251,6 +284,9 @@ for #YOUR_CODE_HERE
    # Check the file with geany if you suspect so.
    # 
    #YOUR_CODE_HERE
+
+   	sed -i '/^\r/d' ${STATSDIR}/${ARTISTNAME}-songs.txt
+
    #
    ### E5.4 END ########################################################
 
@@ -262,7 +298,10 @@ for #YOUR_CODE_HERE
    # https://www.tecmint.com/wc-command-examples/
    # Use the cut command to take only the number in the output of wc.
    #
-   #YOUR_CODE_HERE
+   
+   	NUMSONGS=$(wc -l ${STATSDIR}/${ARTISTNAME}-songs.txt|cut -d " " -f 1)
+
+
    #
    ### E5.5 END ########################################################
 
@@ -282,6 +321,8 @@ for #YOUR_CODE_HERE
    # You can see an example of the syntax at line 140.
    #
    #YOUR_CODE_HERE
+
+   echo -e  "\"$ARTISTNAME\",\"$NUMSONGS\"" >> ${STATSDIR}/stats.csv
    #
    ### E5.6 END ########################################################
 
@@ -301,7 +342,7 @@ done  # End of for loop
 # https://www.geeksforgeeks.org/sort-command-linuxunix-examples/
 # useful options: -h -k
 #
-TOPSONGARTIST=#YOUR_CODE_HERE
+TOPSONGARTIST=$(sort -k 2n ${STATSDIR}/stats.csv| tail -n 1) 
 #
 ### E6 END #############################################################
 
