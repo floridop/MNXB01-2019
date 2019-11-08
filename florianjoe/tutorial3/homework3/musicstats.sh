@@ -47,7 +47,7 @@ usage(){
 ###### EDIT THE CODE BELOW, follow instructions ########################
 
 #
-# Student: YOUR_NAME_HERE
+# Student: Florian Jörg
 #
 
 ### E0 (2 points) fill the blanks
@@ -65,7 +65,7 @@ usage(){
 # Discover it by downloading it and using the file command.
 #  file STIL.txt
 # Paste the output of the file command below.
-# The encoding is ____________________ 
+# The encoding for STIL.txt is: ISO-8859 text, with CRLF line terminators___ 
 #
 # (1 point) Which of the following statement do you think it is true
 # about the file format in order to complete the sentence below
@@ -75,13 +75,13 @@ usage(){
 # Every record (that is, information about a .sid file) 
 # of this database ...
 # a) [ ] ... starts and ends with a sequence of symbols # (hash)
-# b) [ ] ... starts with a path /something/.../something.sid entry
+# b) [X] ... starts with a path /something/.../something.sid entry
 #       and ends with a blank line
 # c) [ ] ... starts with a path /something/.../something.sid entry 
 #       and ends with an ARTIST: or COMMENT entry
 #
 # hint: find counter examples that contradict 
-#       each of the above statements (if any).
+#       each of the above statements (if any). counter a): Lines 19-22; counter c): lines 81-83, lines 153-163
 
 
 ####### CODE START #####################################################
@@ -100,8 +100,9 @@ ARTISTNAMES=$@
 # this file to give the user information how to pass the parameters.
 # DO NOT MODIFY THE usage() FUNCTION BODY.
 
-if [[ #YOUR_CONDITION_HERE ]]; then
-   #YOUR_CODE_HERE
+if [[ -z "$@" ]]; then 
+	usage
+	exit 1
 fi
 
 ########################################################################
@@ -114,11 +115,15 @@ fi
 # Hint: use the -e condition and the predefined variable $?
 
 # E2.1 (2 points) if the STIL.txt file does not exist, download the file
-if #YOUR_CODE_HERE
-   
+STIL=./STIL.txt
+URL="https://hvsc.de/download/C64Music/DOCUMENTS/STIL.txt"
+if [[ ! -f "${STIL}" ]]; then
+   #first it worked wothout the --no-check-certificate option, but as I tried it again there was a verification error, so I put it in.
+   wget --no-check-certificate ${URL}
    # E2.2 (1 point ) If the wget command fails, exit with error.
-   if #YOUR_CODE_HERE
-   
+   if [ $? -ne 0 ]; then
+		echo "Error while downloading STIL database from ${URL} "
+		exit 1
    fi
    # otherwise (if the file exists) do not download anything
    else echo "STIL database found, will not download again."
@@ -132,19 +137,23 @@ fi
 # the STATSDIR variable.
 # E3.1 (1 point) Define and instantiate the STATSDIR variable with
 # the string 'stats'
-#YOUR_CODE_HERE
 
+STATSDIR=stats
 
 # E3.2 (2 points) Use an if to test if the 'stats' folder exists in the
 # folder where the script is being executed.
 # if it does, delete it.
 # Always print out information to the user about what is happening.
-#YOUR_CODE_HERE
+
+if [[ -d ${STATSDIR} ]]; then
+	echo "Deleting temporary folder stats"
+	rm -r ${STATSDIR}
+fi
 
 # E3.3 (1 point ) Create a new folder taking the name from the 
 # variable $STATSDIR
-echo "Creating new stats directory $STATSDIR"
-#YOUR_CODE_HERE
+echo "Creating new stats directory ${STATSDIR}"
+mkdir ${STATSDIR}
 
 ### E3 END #############################################################
 
@@ -178,9 +187,9 @@ echo "\"ARTISTNAME\",\"NUMSONGS\"" > ${STATSDIR}/stats.csv
 # egrep examples: https://www.computerhope.com/unix/uegrep.htm
 # save the extracted lines to a file called ${STATSDIR}/STIL-recordentries.txt
 # by redirecting the output of egrep with the > operator
-#
-#YOUR_CODE_HERE
-#
+
+egrep -n ^/ $STIL >${STATSDIR}/STIL-recordentries.txt
+
 ### E4 END #############################################################
 
 ########################################################################
@@ -189,7 +198,7 @@ echo "\"ARTISTNAME\",\"NUMSONGS\"" > ${STATSDIR}/stats.csv
 # 
 # E5.1 (1 point) use the proper variables inside the for condition and 
 # body
-for #YOUR_CODE_HERE
+for artist in ${ARTISTNAMES}
    
    #####################################################################
    ### E5.2 (2 points) Create a file containing only artist-specific 
@@ -201,9 +210,10 @@ for #YOUR_CODE_HERE
    # called stats/artistname-entries.txt
    # for example, if one of the artist is Follin_Tim, 
    # the file is stats/Follin_Tim-entries.txt
-   #
-   #YOUR_CODE_HERE
-   #
+   
+   do
+		egrep ${artist} ${STATSDIR}/STIL-recordentries.txt > ${STATSDIR}/${artist}-entries.txt
+   
    ### E5.2 END ########################################################
 
    #####################################################################
@@ -213,9 +223,9 @@ for #YOUR_CODE_HERE
    # to do that. Remember that the song name is the last element of the
    # line. Some hints here:
    # https://www.shellhacks.com/awk-print-column-change-field-separator-linux-bash/
-   #
-   #YOUR_CODE_HERE
-   #
+   
+   awk -F "/" '{print $NF}' ${STATSDIR}/${artist}-entries.txt > ${STATSDIR}/${artist}-songs.txt
+   
    ### E5.3 END ########################################################
 
    #####################################################################
@@ -239,9 +249,9 @@ for #YOUR_CODE_HERE
    # remember that the blank lines may contain invisible characters such
    # such as the pattern \r (line feed) . 
    # Check the file with geany if you suspect so.
-   # 
-   #YOUR_CODE_HERE
-   #
+   
+   sed -i '/^\r$/d' ${STATSDIR}/${artist}-songs.txt
+  
    ### E5.4 END ########################################################
 
    #####################################################################
@@ -251,12 +261,12 @@ for #YOUR_CODE_HERE
    # ${STATSDIR}/${ARTISTNAME}-songs.txt using the wc command.
    # https://www.tecmint.com/wc-command-examples/
    # Use the cut command to take only the number in the output of wc.
-   #
-   #YOUR_CODE_HERE
-   #
+   
+   NUMSONGS=`wc -l <${STATSDIR}/${artist}-songs.txt`
+  
    ### E5.5 END ########################################################
 
-   echo "Number of songs for artist $ARTISTNAME is $NUMSONGS, storing in ${STATSDIR}/stats.csv" 
+   echo "Number of songs for artist $artist is $NUMSONGS, storing in ${STATSDIR}/stats.csv" 
    
    #####################################################################
    ### E5.6 (1 points) Store the name of the artist and the number of 
@@ -270,9 +280,9 @@ for #YOUR_CODE_HERE
    # and write the file using the >> operator. (append to file operator)
    # use the variable names $ARTISTNAME and $NUMSONGS!
    # You can see an example of the syntax at line 140.
-   #
-   #YOUR_CODE_HERE
-   #
+   
+   echo "\"${artist}\",\"${NUMSONGS}\"" >> ${STATSDIR}/stats.csv
+   
    ### E5.6 END ########################################################
 
 done  # End of for loop
@@ -291,7 +301,7 @@ done  # End of for loop
 # https://www.geeksforgeeks.org/sort-command-linuxunix-examples/
 # useful options: -h -k
 #
-TOPSONGARTIST=#YOUR_CODE_HERE
+TOPSONGARTIST=`sort -t\" -h -k4 ${STATSDIR}/stats.csv | tail -n 1` 
 #
 ### E6 END #############################################################
 
