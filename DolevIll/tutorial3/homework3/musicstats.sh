@@ -75,9 +75,9 @@ usage(){
 # Every record (that is, information about a .sid file) 
 # of this database ...
 # a) [ ] ... starts and ends with a sequence of symbols # (hash)
-# b) [ ] ... starts with a path /something/.../something.sid entry
+# b) [X] ... starts with a path /something/.../something.sid entry
 #       and ends with a blank line
-# c) [X] ... starts with a path /something/.../something.sid entry 
+# c) [ ] ... starts with a path /something/.../something.sid entry 
 #       and ends with an ARTIST: or COMMENT entry
 #
 # hint: find counter examples that contradict 
@@ -100,14 +100,13 @@ ARTISTNAMES=$@
 # this file to give the user information how to pass the parameters.
 # DO NOT MODIFY THE usage() FUNCTION BODY.
 
-if [ -z "${ARTISTNAMES}" ] 
-then 
+if [ -z "${ARTISTNAMES}" ];
+then
 	 echo "\$ARTISTNAMES is empty" 
-	 usage 
-else 
-       echo "\$ARTISTNAMES is NOT empty" 
+	 usage
+	 exit 1
 fi
-########################################################################
+################################################################
 ### E2 (3 points) Download the STIL.txt db
 # Test if the STIL.txt file exists. If it doesn't exist, write the code 
 # to download it using the wget command. 
@@ -121,8 +120,7 @@ FILE=STIL.txt
 if [ ! -e "$FILE" ]; then
     wget -q  https://hvsc.de/download/C64Music/DOCUMENTS/STIL.txt
    # E2.2 (1 point ) If the wget command fails, exit with error.
-	r='wget -q  https://hvsc.de/download/C64Music/DOCUMENTS/STIL.txt'
-	if [ $r -ne 0 ]; #This gives an error when deleting STIL.txt, why?
+	if [ $? -ne 0 ]; 
   	then 
   	echo "Error in executing wget, exiting the script"
 	exit 1
@@ -155,8 +153,6 @@ if [ -d $STATSDIR ]; then
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 	rm -r $STATSDIR
 	fi
-else
-	mkdir $STATSDIR
 fi
 # E3.3 (1 point ) Create a new folder taking the name from the 
 # variable $STATSDIR
@@ -232,7 +228,7 @@ for ARTISTNAME in $ARTISTNAMES
    # line. Some hints here:
    # https://www.shellhacks.com/awk-print-column-change-field-separator-linux-bash/
    # 
-	awk  -F "/" '{print $NF}' ${STATSDIR}/${ARTISTNAME}-entries.txt > ${STATSDIR}/${ARTISTNAME}-songs.txt #Doesnt work yet...
+	awk  -F "/" '{print $NF}' ${STATSDIR}/${ARTISTNAME}-entries.txt > ${STATSDIR}/${ARTISTNAME}-songs.txt 
    #
    ### E5.3 END ########################################################
 
@@ -290,7 +286,7 @@ for ARTISTNAME in $ARTISTNAMES
    # use the variable names $ARTISTNAME and $NUMSONGS!
    # You can see an example of the syntax at line 140.
    #
-   echo -e  "\"$ARTISTNAME\",\"$NUMSONGS\"" >> ${STATSDIR}/stats.csv
+   echo -e  "\"$ARTISTNAME\", \"$NUMSONGS\"" >> ${STATSDIR}/stats.csv
    #
    ### E5.6 END ########################################################
 
@@ -310,7 +306,7 @@ done  # End of for loop
 # https://www.geeksforgeeks.org/sort-command-linuxunix-examples/
 # useful options: -h -k
 #
-TOPSONGARTIST=$(sort -k 2n ${STATSDIR}/stats.csv| tail -n 1)
+TOPSONGARTIST=$(sort -k2V ${STATSDIR}/stats.csv| tail -n 1)
 #
 ### E6 END #############################################################
 
